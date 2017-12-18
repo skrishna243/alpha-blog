@@ -8,6 +8,7 @@ end
 
 gem 'jquery-rails'
 gem 'rails', '~> 5.1.4'
+gem 'bcrypt', '~> 3.1.7' 
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form', '~> 3.5'

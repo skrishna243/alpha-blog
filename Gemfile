@@ -8,7 +8,9 @@ end
 
 gem 'jquery-rails'
 gem 'rails', '~> 5.1.4'
-gem 'bcrypt', '~> 3.1.7' 
+gem 'bcrypt', '~> 3.1.7'
+gem 'will_paginate', '3.1.5'
+gem 'bootstrap-will_paginate', '1.0.0'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form', '~> 3.5'
@@ -19,6 +21,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-ui-rails'
+
 
 group :development, :test do
   gem 'sqlite3'

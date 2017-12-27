@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+  def index
+    @users = User.paginate(page: params[:page], per_page: 3)
+  end
+
   def new
     @user = User.new
   end
@@ -25,6 +29,11 @@ class UsersController < ApplicationController
     else
      render 'edit'
      end
+  end
+
+  def show
+    @user = User.find(params[:id])
+    @user_articles = @user.articles.paginate(page: params[:page], per_page:2)
   end
 
   private
